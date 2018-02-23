@@ -3,6 +3,7 @@ import java.util.Arrays;
 public class SelectionSort {
 	static int[] numbersToSort = {2,4,3,6,1};
 	//just in case I want to add descending in the future
+	//the string does nothing, it's a note to say it's ascending order
 	String order = "ascending";
 	
 	public static void main(String args[]) {
@@ -12,10 +13,7 @@ public class SelectionSort {
 	}
 
 	public static int[] selectionSort() {
-		
-		//Line 1 of pseudocode 
 		for (int i=0; i < numbersToSort.length; i++) {
-			//Line 2 of pseudocode
 			int j = i;
 			int m = numbersToSort[i];
 			
@@ -30,12 +28,12 @@ public class SelectionSort {
 			}
 		}
 		
-		
 		//I am iterating on a single array to save memory
 		//(even though the java garbage collector will sort us out)
 		return numbersToSort;
 	}
 	
+	//array elements swapping method stolen from stackoverflow
 	public static void swap(int i, int j, int[] arr) {
 		   int t = arr[i];
 		   arr[i] = arr[j];
