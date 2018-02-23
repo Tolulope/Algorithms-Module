@@ -1,7 +1,7 @@
 import java.util.Arrays;
 
 public class SelectionSort {
-	static int[] numbersToSort = {2,4,3,6,1};
+	static int[] numbersToSort = {2,2,4,3,6,1};
 	//just in case I want to add descending in the future
 	//the string does nothing, it's a note to say it's ascending order
 	String order = "ascending";
