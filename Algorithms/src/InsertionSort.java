@@ -28,5 +28,23 @@ public class InsertionSort {
 
 		return numbersToSort;
 	}
+	
+	public int[] insertionSort(int[] numeros) {
+		
+		for(int i=2; i < numeros.length; i++) {
+			//For this for loop I think two in the psuedocode is 1 
+			//due to arrays starting with index 0
+			for(int j=i; j>=1; j--) {
+				if (numeros[j] < numeros[j-1]) {
+					Helper.swap(j, j-1, numeros);
+				} else {
+					break;
+				}
+			}		
+			
+		}
+
+		return numeros;
+	}
 
 }
